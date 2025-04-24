@@ -1,4 +1,4 @@
-# Personal Portfolio - SS
+# Personal Portfolio
 
 Welcome to my personal portfolio website. This project showcases my skills, experience, and selected works as a front-end developer. Designed with both **light and dark themes**, it’s fully responsive and modern.
 
