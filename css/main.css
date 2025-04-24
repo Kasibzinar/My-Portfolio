@@ -1,0 +1,36 @@
+/* ===== LIGHT MODE ===== */
+
+:root {
+  --text-color: #111827;
+  --secondary-t-color: #4b5563;
+  --bg-color: #fff;
+  --cv-section-bg-color: #f9fafb;
+  --pro-img-pad: #f9fafb;
+  --nav-bg: #e5e7eb;
+  --project-padding: #374151;
+  --ex-cart-bg: #fff;
+  --test-profile: #9ca3af;
+  --main-nav-bg: #ffffffe6;
+  --hero-img: 2px solid #e5e7eb;
+  --author-shadow: 20px 20px 0px 10px #e5e7eb;
+  --about-shadow: -20px 20px -0px 10px #e5e7eb;
+  --card-shadow: 0 1px 4px #00000026;
+}
+
+/* ===== LIGHT MODE ===== */
+[data-theme="dark"] {
+  --text-color: #f9fafb;
+  --secondary-t-color: #d1d5db;
+  --bg-color: #030712;
+  --cv-section-bg-color: #111827;
+  --pro-img-pad: #374151;
+  --nav-bg: #374151;
+  --ex-cart-bg: #1f2937;
+  --project-padding: #374151;
+  --test-profile: #9ca3af;
+  --main-nav-bg: #000000e6;
+  --hero-img: 2px solid #9ca3af;
+  --author-shadow: 20px 20px 0px 10px #374151;
+  --about-shadow: -20px 20px -0px 10px #374151;
+  --card-shadow: 0 1px 4px #00000026;
+}
