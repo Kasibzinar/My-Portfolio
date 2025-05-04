@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /********************/
 /****** HEADER ******/
 /********************/
@@ -117,7 +121,8 @@ body {
 }
 
 .icon-sun:hover,
-.hero-logos img:hover {
+.hero-logos img:hover,
+.platform-logo img:hover {
   background-color: var(--nav-bg);
   padding: 1px 3px;
   border-radius: 6rem;
@@ -505,6 +510,7 @@ body {
   gap: 2rem;
   font-size: 3.6rem;
   font-weight: 500;
+  color: var(--text-color);
 }
 
 .platform-logo {
