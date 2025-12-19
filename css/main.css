@@ -15,10 +15,11 @@
   --author-shadow: 20px 20px 0px 10px #e5e7eb;
   --about-shadow: -20px 20px -0px 10px #e5e7eb;
   --card-shadow: 0 1px 4px #00000026;
+  --sticky-bg: rgba(255, 255, 255, 0.95);
 }
 
-/* ===== LIGHT MODE ===== */
-[data-theme="dark"] {
+/* ===== DARK MODE ===== */
+[data-theme='dark'] {
   --text-color: #f9fafb;
   --secondary-t-color: #d1d5db;
   --bg-color: #030712;
@@ -33,4 +34,5 @@
   --author-shadow: 20px 20px 0px 10px #374151;
   --about-shadow: -20px 20px -0px 10px #374151;
   --card-shadow: 0 1px 4px #00000026;
+  --sticky-bg: rgba(3, 7, 17, 0.95);
 }
