@@ -19,7 +19,7 @@ Welcome to my personal portfolio website. This project showcases my skills, expe
 
 - **HTML**
 - **CSS** (with Variables, Flexbox & Grid)
-- **JavaScript** with few lines
+- **JavaScript**
 - **Figma** for UI design
 
  ## License
