@@ -2,6 +2,11 @@
 
 Welcome to my personal portfolio website. This project showcases my skills, experience, and selected works as a front-end developer. Designed with both **light and dark themes**, it’s fully responsive and modern.
 
+## Recent Updates
+- Added JavaScript interactivity
+- Improved responsiveness
+- Enhanced UI animations
+
 ## Features
 
 - Responsive design (mobile-first)
