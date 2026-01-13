@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Portfolio</title>
+    <title>Kasib Zinar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +25,12 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
+    <div class="scroll-progress"></div>
     <section class="hero-section">
       <div class="site-header__container">
         <header class="site-header">
-          <h2 class="site-header__brand">&lt; Kasib Zinar /&gt;</h2>
+          <!-- <h2 class="site-header__brand">&lt; SS /&gt;</h2> -->
+          <h2 class="site-header__brand">KASIB ZINAR</h2>
           <nav class="primary-navigation">
             <ul class="primary-navigation__list">
               <li>
@@ -36,6 +38,17 @@
                   >About</a
                 >
               </li>
+              <li>
+                <a class="menu-fade__link nav-link" href="#skillsSection"
+                  >Skills</a
+                >
+              </li>
+              <!-- <li>
+                <a class="menu-fade__link nav-link" href="#experienceSection"
+                  >Experience</a
+                >
+              </li> -->
+
               <li><a class="menu-fade__link nav-link" href="#work">Work</a></li>
               <li>
                 <a class="menu-fade__link nav-link" href="#testimonials"
@@ -46,29 +59,42 @@
                 <a class="menu-fade__link nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <div class="separator"></div>
+            <!-- <div class="separator">|</div> -->
 
             <div class="header-actions">
               <div class="theme-toggle">
-                <img
-                  src="assets/icons/light mode.svg"
-                  alt="light mode"
-                  class="menu-fade__link icon icon-sun"
-                />
                 <img
                   src="assets/icons/dark mode.svg"
                   alt="dark mode"
                   class="menu-fade__link icon icon-moon"
                 />
+                <img
+                  src="assets/icons/light mode.svg"
+                  alt="light mode"
+                  class="menu-fade__link icon icon-sun"
+                />
               </div>
               <a
                 class="menu-fade__link cv-link__btn"
-                href="https://github.com/Kasibzinar/My-Portfolio/blob/38a69d969e066e5fb9f5521fb5c4d153c6422b6f/Kasib%20Zinar%20CV.pdf"
+                href="Kasib_Zinar_Resume.pdf"
                 target="_blank"
+                download="Kasib_Zinar_Resume.pdf"
                 >Download CV</a
               >
             </div>
           </nav>
+          <div class="theme-toggle theme-toggle--mobile">
+            <img
+              src="assets/icons/dark mode.svg"
+              alt="dark mode"
+              class="menu-fade__link icon icon-moon"
+            />
+            <img
+              src="assets/icons/light mode.svg"
+              alt="light mode"
+              class="menu-fade__link icon icon-sun"
+            />
+          </div>
           <button class="mobile-menu-toggle">
             <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
             <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
@@ -82,8 +108,8 @@
             <h1 class="hero__title">Hi, I’m Zinar</h1>
           </div>
           <p class="developer-intro">
-            I'm a Frontend developer with a focus on creating ( and occasionally
-            designing ) exceptional digital experiences that are fast,
+            I'm a Frontend developer with a focus on creating (and occasionally
+            designing) exceptional digital experiences that are fast,
             accessible, visually appealing, and responsive. Even though I have
             been creating web applications, I still love it as if it was
             something new.
@@ -102,7 +128,7 @@
               <img src="assets/logos/github logo.svg" alt="github" />
             </a>
             <a href="https://www.linkedin.com/in/Kasib Zinar" target="_blank">
-              <img src="assets/logos/twitter logo.svg" alt="twitter" />
+              <img src="assets/logos/twitter logo.svg" alt="linkedin" />
             </a>
             <a href="https://www.figma.com/@kasibzinar" target="_blank">
               <img src="assets/logos/figma logo.svg" alt="figma" />
@@ -169,7 +195,7 @@
         </div>
       </div>
     </section>
-    <section class="skills container">
+    <section class="skills container" id="skillsSection">
       <button class="skill-btn btn-1">Skills</button>
       <p class="skills-p">
         The skills, tools and technologies I am really good at:
@@ -177,7 +203,7 @@
 
       <div class="skill-column">
         <div class="learned-skills">
-          <p>Learned Skills</p>
+          <p>Learned-skills</p>
           <div class="skills-grid">
             <div class="skill-item">
               <img src="assets/logos/html-1.svg" alt="html" />
@@ -232,7 +258,7 @@
         </div>
       </div>
     </section>
-    <section class="experience-section">
+    <section class="experience-section" id="experienceSection">
       <div class="container">
         <button class="experience-btn">Experience</button>
         <p class="ex-p">
@@ -306,71 +332,71 @@
             <div class="project-card__image">
               <img
                 class="lazy-load-image"
-                src="assets/images/personal portfolio.png"
+                src="assets/images/Udemy Clone.png"
                 alt="project image"
               />
             </div>
             <div class="project-card__content">
-              <h4 class="project-name">My Personal Portfolio</h4>
-              <p>
-                Built a personal portfolio website to present skills, projects,
-                and contact information Used basic JavaScript for interactive
-                elements and improved user engagement Designed a clean,
-                professional layout optimized for different screen sizes
-                Demonstrates personal branding and frontend development
-                fundamentals
-              </p>
-              <div class="buttons">
-                <button class="project-btn">HTML</button>
-                <button class="project-btn">CSS</button>
-                <button class="project-btn">Figma</button>
-                <button class="project-btn">Git</button>
+              <div class="project-card__content--header">
+                <h4 class="project-name">Udemy Clone</h4>
+                <p>
+                  A dynamic front-end Udemy clone built with HTML, CSS, and
+                  JavaScript, featuring data-driven course rendering and
+                  interactive UI behavior.
+                </p>
+                <div class="buttons">
+                  <button class="project-btn">HTML</button>
+                  <button class="project-btn">CSS</button>
+                  <button class="project-btn">JavaScript</button>
+                  <button class="project-btn">Git</button>
+                </div>
+                <a
+                  href="https://github.com/Kasibzinar/My-Portfolio.git"
+                  target="_blank"
+                >
+                  <img
+                    class="share-icon"
+                    src="assets/icons/share.svg"
+                    alt="share icon"
+                  />
+                </a>
               </div>
-              <a
-                href="https://github.com/Kasibzinar/My-Portfolio.git"
-                target="_blank"
-              >
-                <img
-                  class="share-icon"
-                  src="assets/icons/share.svg"
-                  alt="share icon"
-                />
-              </a>
             </div>
           </div>
         </div>
         <div class="slide slide--2">
           <div class="project-card">
             <div class="project-card__content">
-              <h4 class="project-name">ShopCo ecommerce</h4>
-              <p>
-                Designed and developed a responsive e-commerce website layout
-                showcasing clothing products and categories Implemented clean UI
-                structure using semantic HTML and modern CSS styling techniques
-                Focused on layout consistency, spacing, and visual hierarchy to
-                improve user experience
-              </p>
-              <div class="buttons">
-                <button class="project-btn">HTML</button>
-                <button class="project-btn">CSS</button>
-                <button class="project-btn">Figma</button>
-                <button class="project-btn">Git</button>
+              <div class="project-card__content--header">
+                <h4 class="project-name">My Personal Portfolio</h4>
+                <p>
+                  A responsive personal portfolio website designed to showcase
+                  my projects, skills, and learning journey with a clean and
+                  professional layout.
+                </p>
+                <div class="buttons">
+                  <button class="project-btn">HTML</button>
+                  <button class="project-btn">CSS</button>
+                  <button class="project-btn">JavaScript</button>
+                  <button class="project-btn">Figma</button>
+                  <button class="project-btn">Git</button>
+                </div>
+                <a
+                  href="https://github.com/Kasibzinar/My-Portfolio.git"
+                  target="_blank"
+                >
+                  <img
+                    class="share-icon"
+                    src="assets/icons/share.svg"
+                    alt="share icon"
+                  />
+                </a>
               </div>
-              <a
-                href="https://github.com/Kasibzinar/Shopco-ecommerce.git"
-                target="_blank"
-              >
-                <img
-                  class="share-icon"
-                  src="assets/icons/share.svg"
-                  alt="share icon"
-                />
-              </a>
             </div>
             <div class="project-card__image right-image">
               <img
                 class="lazy-load-image"
-                src="assets/images/shopco ecommerce.png"
+                src="assets/images/personal portfolio.png"
                 alt="project image"
               />
             </div>
@@ -381,74 +407,72 @@
             <div class="project-card__image">
               <img
                 class="lazy-load-image"
-                src="assets/images/crypto dashboard.png"
+                src="assets/images/shopco ecommerce.png"
                 alt="project image"
               />
             </div>
             <div class="project-card__content">
-              <h4 class="project-name">Crypto Dashboard</h4>
-              <p>
-                Designed a static crypto dashboard interface focused on modern
-                UI principles Structured dashboard layout using cards, grids,
-                and responsive design techniques Paid close attention to
-                typography, spacing, and visual balance
-              </p>
-              <div class="buttons">
-                <button class="project-btn">HTML</button>
-                <button class="project-btn">CSS</button>
-                <button class="project-btn">Figma</button>
-                <button class="project-btn">Git</button>
+              <div class="project-card__content--header">
+                <h4 class="project-name">ShopCo ecommerce</h4>
+                <p>
+                  A responsive e-commerce website interface created with HTML
+                  and CSS, inspired by real online stores and focused on clean
+                  UI and structured product layouts.
+                </p>
+                <div class="buttons">
+                  <button class="project-btn">HTML</button>
+                  <button class="project-btn">CSS</button>
+                  <button class="project-btn">Figma</button>
+                  <button class="project-btn">Git</button>
+                </div>
+                <a
+                  href="https://github.com/Kasibzinar/Shopco-ecommerce.git"
+                  target="_blank"
+                >
+                  <img
+                    class="share-icon"
+                    src="assets/icons/share.svg"
+                    alt="share icon"
+                  />
+                </a>
               </div>
-              <a
-                href="https://github.com/Kasibzinar/localrepo.git"
-                target="_blank"
-              >
-                <img
-                  class="share-icon"
-                  src="assets/icons/share.svg"
-                  alt="share icon"
-                />
-              </a>
             </div>
           </div>
         </div>
-
         <div class="slide slide--4">
           <div class="project-card">
-            <div class="project-card__image">
+            <div class="project-card__content">
+              <div class="project-card__content--header">
+                <h4 class="project-name">Crypto Dashboard</h4>
+                <p>
+                  A responsive crypto dashboard UI built with HTML and CSS,
+                  focusing on clean layout, reusable components, and modern
+                  dashboard design principles.
+                </p>
+                <div class="buttons">
+                  <button class="project-btn">HTML</button>
+                  <button class="project-btn">CSS</button>
+                  <button class="project-btn">Figma</button>
+                  <button class="project-btn">Git</button>
+                </div>
+                <a
+                  href="https://github.com/Kasibzinar/localrepo.git"
+                  target="_blank"
+                >
+                  <img
+                    class="share-icon"
+                    src="assets/icons/share.svg"
+                    alt="share icon"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="project-card__image right-image">
               <img
                 class="lazy-load-image"
-                src="assets/images/Udemy Clone.png"
+                src="assets/images/crypto dashboard.png"
                 alt="project image"
               />
-            </div>
-            <div class="project-card__content">
-              <h4 class="project-name">My Personal Portfolio</h4>
-              <p>
-                Developing a frontend clone of an online learning platform to
-                practice real-world web application structure Implementing
-                dynamic content rendering using JavaScript (course listings, UI
-                interactions) Building responsive layouts for course cards,
-                navigation, and landing pages Applying DOM manipulation and
-                event handling to improve interactivity Focused on clean code
-                structure, reusable components, and user-friendly UI design
-              </p>
-              <div class="buttons">
-                <button class="project-btn">HTML</button>
-                <button class="project-btn">CSS</button>
-                <button class="project-btn">JavaScript</button>
-                <button class="project-btn">Git</button>
-              </div>
-              <a
-                href="https://github.com/Kasibzinar/My-Portfolio.git"
-                target="_blank"
-              >
-                <img
-                  class="share-icon"
-                  src="assets/icons/share.svg"
-                  alt="share icon"
-                />
-              </a>
             </div>
           </div>
         </div>
@@ -569,7 +593,7 @@
           <img src="assets/logos/github logo.svg" alt="github" />
         </a>
         <a href="https://www.linkedin.com/in/Kasib Zinar" target="_blank">
-          <img src="assets/logos/twitter logo.svg" alt="twitter" />
+          <img src="assets/logos/twitter logo.svg" alt="linkedin" />
         </a>
         <a href="https://www.figma.com/@kasibzinar" target="_blank">
           <img src="assets/logos/figma logo.svg" alt="figma" />
@@ -583,5 +607,22 @@
         Zinar
       </p>
     </footer>
+    <button class="back-to-top" aria-label="Back to top">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M5 12L12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
   </body>
 </html>

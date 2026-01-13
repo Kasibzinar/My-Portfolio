@@ -62,7 +62,6 @@
   }
 
   .skills-p,
-  .work-p,
   .ex-p,
   .test-p,
   .developer-intro,
@@ -70,10 +69,22 @@
     margin-bottom: 3rem;
   }
 
+  .work-p {
+    margin-bottom: -0.8rem;
+  }
+
+  .project-card {
+    height: 81%;
+  }
+
+  .slider {
+    height: 40rem;
+  }
+
   .project-card__content,
   .testimonial-card,
   .project-card__image {
-    padding: 2rem;
+    padding: 2.4rem;
   }
 
   .testimonial-card h4 {
@@ -93,6 +104,19 @@
 /* BELOW 900px */
 /**************************/
 @media (max-width: 56.25em) {
+  .site-header__container {
+    padding: 1.2rem 2.4rem;
+  }
+  .site-header__brand {
+    font-size: 2.4rem;
+  }
+  .header-actions {
+    gap: 1rem;
+  }
+
+  .primary-navigation__list {
+    gap: 0;
+  }
   .project-card {
     grid-template-columns: 1fr;
     border-radius: 1rem;
@@ -103,7 +127,7 @@
   }
 
   .work-p {
-    margin-bottom: 0;
+    margin-bottom: -6rem;
   }
 
   .slider__btn {
@@ -111,11 +135,11 @@
   }
 
   .slider {
-    height: 80rem;
+    height: 91rem;
   }
 
   .slide {
-    height: 77rem;
+    height: 92rem;
   }
 
   .project-card__image {
@@ -127,12 +151,37 @@
   }
 }
 
+@media (max-width: 50em) {
+  .site-header__brand {
+    font-size: 2rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    padding: 6px 8px;
+  }
+}
+
 /**************************/
 /* BELOW 752px */
 /**************************/
 @media (max-width: 47em) {
+  .back-to-top {
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .site-header__container {
+    padding: 0.4rem 2rem;
+  }
   .slider {
-    height: 70rem;
+    height: 78rem;
+  }
+
+  .slide {
+    height: 83rem;
   }
   .container {
     padding: 7rem 3.2rem;
@@ -143,17 +192,8 @@
     grid-template-columns: 1fr;
   }
 
-  .sticky {
-    display: none;
-  }
-
   .skills-grid {
     grid-template-columns: repeat(5, 0fr);
-  }
-
-  .slider,
-  slide {
-    height: 74rem;
   }
 
   .experience-card {
@@ -233,6 +273,29 @@
     flex-direction: column;
   }
 
+  .header-actions .theme-toggle {
+    display: none;
+  }
+
+  .site-header {
+    position: relative;
+  }
+
+  .theme-toggle--mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+  }
+
+  .mobile-menu-toggle {
+    position: relative;
+  }
+
   .nav-open .icon-mobile-nav[name='close-outline'] {
     display: block;
   }
@@ -252,6 +315,7 @@
 
   .header-actions {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .separator {
@@ -302,6 +366,10 @@
     grid-template-columns: repeat(3, 0fr);
   }
 
+  .work-p {
+    margin-bottom: -5rem;
+  }
+
   .test-content {
     grid-template-columns: 1fr;
   }
@@ -318,6 +386,7 @@
   .email,
   .phone {
     font-size: 2.4rem;
+    gap: 1rem;
   }
 }
 
@@ -349,9 +418,12 @@
     padding: 1.6rem;
   }
 
-  .slide,
   .slider {
-    height: 65rem;
+    height: 64rem;
+  }
+
+  .slide {
+    height: 68rem;
   }
 
   .testimonial-card,
@@ -361,7 +433,7 @@
 
   .email,
   .phone {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .email img,
@@ -381,30 +453,34 @@
 }
 
 /**************************/
-/* BELOW 368px */
+/* BELOW 384px */
 /**************************/
-@media (max-width: 23rem) {
+@media (max-width: 24em) {
   .container {
     padding: 5.2rem 1.6rem;
   }
 
-  .slide {
-    height: 60rem;
+  .site-header__brand {
+    font-size: 1.8rem;
   }
-
   .slider {
-    height: 65rem;
+    height: 63rem;
   }
 
-  .site-header__container {
-    padding: 1.6rem 2rem;
+  .slide {
+    height: 66rem;
   }
+
+  .icon-mobile-nav {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
   .hero__title {
     font-size: 4rem;
   }
 
   .skills-p,
-  .work-p,
   .ex-p,
   .test-p,
   .developer-intro,
@@ -439,7 +515,6 @@
   }
 
   .skills-grid {
-    /* grid-template-columns: repeat(2, 0fr); */
     gap: 4rem;
   }
 
@@ -448,5 +523,26 @@
   .contact-p {
     font-size: 1.8rem;
     gap: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 304px */
+/**************************/
+@media (max-width: 19em) {
+  .hero-img img,
+  .about-developer img {
+    width: 100%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 0fr);
+    gap: 4rem;
+  }
+
+  .email,
+  .phone,
+  .contact-p {
+    font-size: 1.2rem;
   }
 }

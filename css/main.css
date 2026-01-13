@@ -16,6 +16,8 @@
   --about-shadow: -20px 20px -0px 10px #e5e7eb;
   --card-shadow: 0 1px 4px #00000026;
   --sticky-bg: rgba(255, 255, 255, 0.95);
+  --dots__dot-color: #b9b9b9;
+  --dots__dot--active: #888;
 }
 
 /* ===== DARK MODE ===== */
@@ -35,4 +37,6 @@
   --about-shadow: -20px 20px -0px 10px #374151;
   --card-shadow: 0 1px 4px #00000026;
   --sticky-bg: rgba(3, 7, 17, 0.95);
+  --dots__dot-color: #4b5563;
+  --dots__dot--active: #f9fafb;
 }
